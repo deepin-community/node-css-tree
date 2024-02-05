@@ -1,0 +1,17 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022583
+Forwarded: not-needed
+Last-Update: 2022-10-25
+
+--- a/scripts/esm-to-cjs.cjs
++++ b/scripts/esm-to-cjs.cjs
+@@ -137,7 +137,7 @@
+         format: 'cjs',
+         exports: 'auto',
+         preserveModules: true,
+-        interop: false,
++        interop: 'auto',
+         esModule: false,
+         generatedCode: {
+             constBindings: true
