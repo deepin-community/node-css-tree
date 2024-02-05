@@ -1,0 +1,4 @@
+if [ "$AUTOPKGTEST_TMP" == "" ]; then
+	mocha cjs/__tests
+fi
+mocha dist/__tests

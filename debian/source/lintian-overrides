@@ -1,0 +1,3 @@
+# False positives
+very-long-line-length-in-source-file *.md*
+source-is-missing *lib/__tests/walk.js*
